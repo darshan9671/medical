@@ -1,0 +1,93 @@
+/* Main Background Section */
+.background-section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../assets/background.jpg'); /* ✅ Adjust path as per your setup */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header inside background (optional if using <Header /> here) */
+.header {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1300px;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 15px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+/* Background Text Content */
+.background-content {
+  max-width: 700px;
+  color: #0a243a;
+  padding-top: 200px;
+  margin-left: 60px;
+  text-align: left;
+  z-index: 10;
+  position: relative;
+}
+.background-video {
+  width: 600px;
+  height: 500px;
+  position: absolute; /* ✅ Important for positioning */
+  top: 400px;          /* Adjust top position */
+  right: 80px;         /* Adjust right position */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  z-index: 2;
+  filter: none; /* ✅ ensure no blur is applied */
+  opacity: 1;
+}
+
+
+/* Title */
+.background-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Description Text */
+.background-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .background-content {
+    margin-left: 20px;
+    padding-top: 140px;
+  }
+
+  .background-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .background-content p {
+    font-size: 1rem;
+  }
+
+  .header {
+    width: 95%;
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Full height layout reset */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Fixed and centered header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 80px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container under the fixed header */
+.main-content {
+  padding-top: 100px; /* Should match header height + spacing */
+  width: 100%;
+}
+
+/* Optional layout wrapper */
+.App {
+  width: 100%;
+  margin: 0 auto;
+}
+

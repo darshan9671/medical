@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-medical/static/css/main.1282305c.css",
+    "main.js": "/my-medical/static/js/main.17b123b4.js",
+    "static/media/logo2.png": "/my-medical/static/media/logo2.6a5c86a716d2ff3129ca.png",
+    "static/media/background.jpg": "/my-medical/static/media/background.27bb5b11f0ead24c3222.jpg",
+    "static/media/Background-video.mp4": "/my-medical/static/media/Background-video.bd204e643e0b2d6f65f3.mp4",
+    "index.html": "/my-medical/index.html",
+    "main.1282305c.css.map": "/my-medical/static/css/main.1282305c.css.map",
+    "main.17b123b4.js.map": "/my-medical/static/js/main.17b123b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1282305c.css",
+    "static/js/main.17b123b4.js"
+  ]
+}

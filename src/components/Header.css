@@ -1,0 +1,82 @@
+/* Header Outer Container */
+.header-container {
+  width: 95vw !important;
+  max-width: 95vw !important;
+  min-width: 115vw !important;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Header Bar */
+.header {
+  width: 95vw !important;
+  max-width: 95vw !important;
+  min-width: 95vw !important;
+  margin: 0 auto;
+  border: 5px solid rgb(3, 3, 36) !important;
+  height: 150px !important;
+  background: rgba(255, 255, 255, 0.496) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+/* Left: Logo section with image */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Center: Navigation */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+/* Right: Button */
+.freelancer-btn button {
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.freelancer-btn button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ensure body doesn't cut off horizontally */
+body,
+#root {
+  overflow-x: auto !important;
+}
+.h1{
+  max-width: 30%;
+  max-height: 30%;
+}
