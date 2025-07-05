@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-medical/static/css/main.1282305c.css",
-    "main.js": "/my-medical/static/js/main.17b123b4.js",
-    "static/media/logo2.png": "/my-medical/static/media/logo2.6a5c86a716d2ff3129ca.png",
-    "static/media/background.jpg": "/my-medical/static/media/background.27bb5b11f0ead24c3222.jpg",
-    "static/media/Background-video.mp4": "/my-medical/static/media/Background-video.bd204e643e0b2d6f65f3.mp4",
-    "index.html": "/my-medical/index.html",
-    "main.1282305c.css.map": "/my-medical/static/css/main.1282305c.css.map",
-    "main.17b123b4.js.map": "/my-medical/static/js/main.17b123b4.js.map"
+    "main.css": "/medical/static/css/main.9c057a33.css",
+    "main.js": "/medical/static/js/main.f5660e6a.js",
+    "static/media/logo2.png": "/medical/static/media/logo2.6a5c86a716d2ff3129ca.png",
+    "static/media/background.jpg": "/medical/static/media/background.27bb5b11f0ead24c3222.jpg",
+    "static/media/Background-video.mp4": "/medical/static/media/Background-video.bd204e643e0b2d6f65f3.mp4",
+    "index.html": "/medical/index.html",
+    "main.9c057a33.css.map": "/medical/static/css/main.9c057a33.css.map",
+    "main.f5660e6a.js.map": "/medical/static/js/main.f5660e6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1282305c.css",
-    "static/js/main.17b123b4.js"
+    "static/css/main.9c057a33.css",
+    "static/js/main.f5660e6a.js"
   ]
 }
