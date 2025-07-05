@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://darshan9671.github.io/medical",
-
   "scripts": {
     "start": "cross-env HOST=0.0.0.0 react-scripts start",
     "build": "react-scripts build",
