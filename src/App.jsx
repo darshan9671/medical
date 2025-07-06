@@ -1,24 +1,27 @@
+// App.jsx or index.js
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+//import Header from "./components/Header";
 import MedicalHome from "./components/MedicalHome";
-import Logo from "./components/Logo";
 import About from "./components/About";
-import Contact from "./components/Contact"; // ✅ Make sure About.jsx exists
+//import Photos from "./components/Photos";
+import Contact from "./components/Contact";
+import Logo from "./components/Logo";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={
-          <>
-            <MedicalHome />
-            <Logo />
-          </>
-        } />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/contact" element={<Contact />} /> {/* ✅ Route added */}
-      </Routes>
-    </Router>
+    <HashRouter>
+    
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<MedicalHome />} />
+          <Route path="/about" element={<About />} />
+          
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Logo />
+      </div>
+    </HashRouter>
   );
 };
 
