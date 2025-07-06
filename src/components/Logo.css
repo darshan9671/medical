@@ -5,45 +5,37 @@
 }
 
 .logo-heading {
-  font-size: 44px;
-  color: #1d1d1d;
-  margin-top: 60px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .logo-marquee {
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
- 
 }
 
 .logo-track {
   display: inline-flex;
-  animation: scrollLeft 40s linear infinite;
-   margin-top: 80px;
+  animation: scrollLeft 30s linear infinite;
 }
 
 .logo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 30px;
-  min-width: 150px;
-  max-width: 150px;
-  white-space: normal;
+  margin: 0 20px;
+  min-width: 120px;
 }
 
 .logo-item img {
-  height: 80px;   /* ya jitna chahiye utna */
-  width: auto;    /* ya width: 80px; agar square chahiye */
-  object-fit: contain; /* image ko distort hone se bachata hai */
-  margin-bottom: 8px;
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 5px;
 }
 
 .logo-item p {
   font-size: 14px;
-  color: #333;
-  text-align: center;
 }
 
 @keyframes scrollLeft {
@@ -52,5 +44,23 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+@media (max-width: 600px) {
+  .logo-heading {
+    font-size: 24px;
+  }
+
+  .logo-item {
+    margin: 0 15px;
+    min-width: 100px;
+  }
+
+  .logo-item img {
+    height: 60px;
+  }
+
+  .logo-item p {
+    font-size: 12px;
   }
 }

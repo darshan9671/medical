@@ -1,13 +1,24 @@
 import React from "react";
-import MedicalHome from "./components/MedicalHome.jsx";
-import Logo from "./components/Logo.jsx";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import MedicalHome from "./components/MedicalHome";
+import Logo from "./components/Logo";
+import About from "./components/About";
+import Contact from "./components/Contact"; // ✅ Make sure About.jsx exists
 
 const App = () => {
   return (
-    <div className="main-content">
-      <MedicalHome />
-      <Logo />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <MedicalHome />
+            <Logo />
+          </>
+        } />
+        <Route path="/about" element={<About />} /> 
+        <Route path="/contact" element={<Contact />} /> {/* ✅ Route added */}
+      </Routes>
+    </Router>
   );
 };
 

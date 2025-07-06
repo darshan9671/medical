@@ -1,28 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "../assets/logo2.png"; // Make sure this image exists
+import logo from "../assets/logo2.png";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false); // closes after clicking a link
+
   return (
     <div className="header-container">
       <div className="header">
         <div className="logo-section">
-          {/* ✅ Use logo image instead of text */}
-          <img src={logo} alt="BigByte Logo" className="logo-image" />
+          <img src={logo} alt="Medical Logo" className="logo-image" />
         </div>
 
-        <nav className="nav-links">
-          <a href="#"><h1>Home</h1></a>
-          <a href="#"><h1>About us</h1></a>
-          <a href="#"><h1>Photos</h1></a>
-          <a href="#"><h1>Contact Us</h1></a>
-        </nav>
+        {/* ✅ Hamburger Menu */}
+        <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
+          <span className="bar bar1"></span>
+          <span className="bar bar2"></span>
+          <span className="bar bar3"></span>
+        </div>
 
-        
+        {/* ✅ Navigation Links */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <Link to="/" onClick={closeMenu}><h1>Home</h1></Link>
+          <Link to="/about" onClick={closeMenu}><h1>About Us</h1></Link>
+          <Link to="/photos" onClick={closeMenu}><h1>Photos</h1></Link>
+          <Link to="/contact" onClick={closeMenu}><h1>Contact Us</h1></Link>
+        </nav>
       </div>
     </div>
   );
 };
 
 export default Header;
-

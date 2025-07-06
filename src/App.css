@@ -1,5 +1,7 @@
 /* Full height layout reset */
-body, html, #root {
+body,
+html,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,17 +28,33 @@ body, html, #root {
   align-items: center;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
 /* Container under the fixed header */
 .main-content {
-  padding-top: 100px; /* Should match header height + spacing */
+  padding-top: 100px; /* Same as header height + margin */
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Optional layout wrapper */
 .App {
   width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .main-content {
+    padding-top: 140px; /* Increase if header grows in height */
+  }
+}
