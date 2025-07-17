@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-medical/static/css/main.9fe18db9.css",
-    "main.js": "/my-medical/static/js/main.15d89ae2.js",
+    "main.css": "/my-medical/static/css/main.77830568.css",
+    "main.js": "/my-medical/static/js/main.791fb71a.js",
     "static/media/Background-video1.mp4": "/my-medical/static/media/Background-video1.0fb22fa5da1c979b8083.mp4",
     "static/media/logo2.png": "/my-medical/static/media/logo2.6a5c86a716d2ff3129ca.png",
     "static/media/background.jpg": "/my-medical/static/media/background.27bb5b11f0ead24c3222.jpg",
     "index.html": "/my-medical/index.html",
-    "main.9fe18db9.css.map": "/my-medical/static/css/main.9fe18db9.css.map",
-    "main.15d89ae2.js.map": "/my-medical/static/js/main.15d89ae2.js.map"
+    "main.77830568.css.map": "/my-medical/static/css/main.77830568.css.map",
+    "main.791fb71a.js.map": "/my-medical/static/js/main.791fb71a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fe18db9.css",
-    "static/js/main.15d89ae2.js"
+    "static/css/main.77830568.css",
+    "static/js/main.791fb71a.js"
   ]
 }
