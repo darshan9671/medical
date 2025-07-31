@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/medical/static/css/main.b382ce11.css",
-    "main.js": "/medical/static/js/main.3607b500.js",
+    "main.css": "/medical/static/css/main.87e80861.css",
+    "main.js": "/medical/static/js/main.87040e3a.js",
     "static/media/present.mp4": "/medical/static/media/present.607552dd7d0f34ec96e9.mp4",
     "static/media/wik.jpg": "/medical/static/media/wik.7c9ec6e3c714b8336668.jpg",
     "static/media/Background-video1.mp4": "/medical/static/media/Background-video1.0fb22fa5da1c979b8083.mp4",
@@ -54,11 +54,11 @@
     "static/media/azi.webp": "/medical/static/media/azi.0f69452d751c1cc2156d.webp",
     "static/media/hor.jpeg": "/medical/static/media/hor.6cc31093908394a898b3.jpeg",
     "index.html": "/medical/index.html",
-    "main.b382ce11.css.map": "/medical/static/css/main.b382ce11.css.map",
-    "main.3607b500.js.map": "/medical/static/js/main.3607b500.js.map"
+    "main.87e80861.css.map": "/medical/static/css/main.87e80861.css.map",
+    "main.87040e3a.js.map": "/medical/static/js/main.87040e3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b382ce11.css",
-    "static/js/main.3607b500.js"
+    "static/css/main.87e80861.css",
+    "static/js/main.87040e3a.js"
   ]
 }
