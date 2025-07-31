@@ -1,0 +1,68 @@
+.daily-container {
+  padding: 40px 30px;
+ background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  text-align: center;
+  overflow: hidden;
+}
+
+.daily-container h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.daily-container p {
+  font-size: 17px;
+  color: #00796b;
+  margin-bottom: 25px;
+}
+
+/* Outer wrapper */
+.daily-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Animated scrolling area */
+.daily-scroll {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 30s linear infinite;
+}
+
+/* Card style */
+.daily-card {
+  min-width: 280px;
+  height: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  text-align: center;
+  padding: 15px;
+  flex-shrink: 0;
+  margin-top: 60px;
+}
+
+.daily-card img {
+  width: 250;
+  height: 290px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.daily-card p {
+  font-weight: 600;
+  font-size: 16px;
+ color: #00796b;
+}
+
+/* Keyframes for infinite looping */
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

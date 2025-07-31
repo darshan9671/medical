@@ -1,9 +1,9 @@
 /* Responsive Contact Page Styles */
 .contact-wrapper {
   padding: 60px 20px;
-  background: linear-gradient(to right, #e3f2fd, #fce4ec);
   display: flex;
   justify-content: center;
+   background: linear-gradient(to right, #e0f7fa, #f1f8e9);
 }
 
 .contact-container {

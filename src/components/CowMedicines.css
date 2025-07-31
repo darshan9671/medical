@@ -1,0 +1,141 @@
+/* Base layout */
+.cow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+}
+
+/* Left image section */
+.cow-left img {
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right cards section */
+.cow-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 650px;
+  justify-content: center;
+}
+
+/* Medicine cards */
+.medicine-card {
+  width: 150px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.medicine-card:hover {
+  transform: scale(1.05);
+}
+
+.medicine-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.medicine-card p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00796b;
+}
+
+/* ----------------------------- */
+/* ✅ Responsive Media Queries   */
+/* ----------------------------- */
+
+@media (max-width: 1024px) {
+  .cow-left img {
+    width: 500px;
+  }
+
+  .medicine-card {
+    width: 130px;
+  }
+
+  .medicine-card img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .medicine-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cow-left img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cow-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medicine-card {
+    width: 120px;
+  }
+
+  .medicine-card img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .medicine-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cow-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .medicine-card {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .medicine-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .medicine-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .medicine-card {
+    width: 90px;
+    padding: 8px;
+  }
+
+  .medicine-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .medicine-card p {
+    font-size: 13px;
+  }
+}

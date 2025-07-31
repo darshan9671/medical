@@ -9,11 +9,14 @@ const Contact = () => {
         <div className="contact-form">
           <h2>Contact Our Medical Store</h2>
           <p>We're here to help you with all your health needs.</p>
-          <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="tel" placeholder="Your Phone" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+          <form
+            action="https://formspree.io/f/manbbbqg"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="tel" name="phone" placeholder="Your Phone" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>

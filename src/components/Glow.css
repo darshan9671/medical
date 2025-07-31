@@ -1,0 +1,205 @@
+.daily-container {
+  padding: 40px 30px;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  text-align: center;
+  overflow: hidden;
+  color: #00796b;
+}
+
+.daily-container h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* ✅ Unified glow heading size with daily-container h3 */
+.glow-heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #00f2ff, 0 0 12px #00c2ff;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 8px #00f2ff, 0 0 12px #00c2ff;
+  }
+  50% {
+    text-shadow: 0 0 16px #00f2ff, 0 0 24px #00c2ff;
+  }
+}
+
+.daily-container p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Outer wrapper */
+.daily-scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Animated scrolling area */
+.daily-scroll {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 30s linear infinite;
+}
+
+/* Card style with reduced spacing */
+.daily-card {
+  min-width: 260px;
+  height: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 8px; /* 🔧 reduced space between cards */
+  text-align: center;
+  padding: 15px;
+  flex-shrink: 0;
+  margin-top: 60px;
+}
+
+.daily-card img {
+  width: 240px;
+  height: 280px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.daily-card p {
+  font-weight: 600;
+  font-size: 24px;
+  color: #00796b;
+}
+
+/* Infinite loop animation */
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ----------------------------- */
+/* ✅ Responsive Media Queries   */
+/* ----------------------------- */
+
+@media (max-width: 1024px) {
+  .daily-container h3,
+  .glow-heading {
+    font-size: 22px;
+  }
+
+  .daily-container p {
+    font-size: 16px;
+  }
+
+  .daily-card {
+    min-width: 220px;
+    height: 340px;
+    margin: 0 6px; /* 🔧 tighter spacing */
+  }
+
+  .daily-card img {
+    width: 200px;
+    height: 240px;
+  }
+
+  .daily-card p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .daily-container h3,
+  .glow-heading {
+    font-size: 20px;
+  }
+
+  .daily-container p {
+    font-size: 15px;
+  }
+
+  .daily-card {
+    min-width: 180px;
+    height: 300px;
+    padding: 12px;
+    margin: 0 5px; /* 🔧 reduced spacing */
+  }
+
+  .daily-card img {
+    width: 160px;
+    height: 200px;
+  }
+
+  .daily-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .daily-container h3,
+  .glow-heading {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .daily-container p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .daily-scroll {
+    animation-duration: 18s;
+  }
+
+  .daily-card {
+    min-width: 150px;
+    height: 260px;
+    margin: 0 4px; /* 🔧 reduced further */
+  }
+
+  .daily-card img {
+    width: 130px;
+    height: 160px;
+  }
+
+  .daily-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .daily-container h3,
+  .glow-heading {
+    font-size: 16px;
+  }
+
+  .daily-container p {
+    font-size: 13px;
+  }
+
+  .daily-card {
+    min-width: 130px;
+    height: 240px;
+    margin: 0 3px; /* 🔧 tightest for small screens */
+  }
+
+  .daily-card img {
+    width: 120px;
+    height: 140px;
+  }
+
+  .daily-card p {
+    font-size: 15px;
+  }
+}

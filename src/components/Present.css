@@ -1,0 +1,23 @@
+.present-section {
+  padding: 2rem;
+  text-align: center;
+   background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+}
+
+.present-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.video-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.presentation-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
